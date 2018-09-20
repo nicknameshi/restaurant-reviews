@@ -109,7 +109,6 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
   background-color: #3397DB;
   align-items: center;
 }
@@ -261,7 +260,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -280,6 +279,9 @@ nav h1 a {
 
 @media screen and (max-width: 800px){
   #restaurants-list{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     padding: 30px 5%;
   }

@@ -157,12 +157,12 @@ class DBHelper {
    * Map marker for a restaurant.
    */
   static mapMarkerForRestaurant(restaurant, map) {
-    const marker = new Google.maps.Marker({
+    const marker = new google.maps.Marker({
       position: restaurant.latlng,
       title: restaurant.name,
       url: DBHelper.urlForRestaurant(restaurant),
       map: map,
-      animation: Google.maps.Animation.DROP}
+      animation: google.maps.Animation.DROP}
     );
     return marker;
   }
